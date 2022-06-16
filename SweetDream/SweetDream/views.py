@@ -11,7 +11,7 @@ def home_view(request):
 def recrutements_view(request):
     submitted = False
     if request.method == "POST":
-        form = RCForm
+        form = RCForm()
         if form.is_valid():
             form.save()
             return HttpResponseRedirect("/")
