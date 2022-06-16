@@ -1,1 +1,1 @@
-print('luvmow t pa bo')
+print('anino t pa bo')
