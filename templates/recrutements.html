@@ -6,8 +6,10 @@
         <div class="sc-dkzDqf pfLsb" style="background: rgb(255, 255, 255);">
             <h1 font-size="40px" color="#a703f3" class="sc-ikZpkk kGHBjQ"><br>Recrutements</h1>
             <div class="sc-jIZahH cgtUlZ">
-                <form action="" class="sc-himrzO fTNlRr">
-                    <div class="sc-gXmSlM cvvFMf"><label color="#7a7a7a" class="sc-cCsOjp cwPEPv">Pseudo
+                <form action="" method="POST" class="sc-himrzO fTNlRr">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <!-- <div class="sc-gXmSlM cvvFMf"><label color="#7a7a7a" class="sc-cCsOjp cwPEPv">Pseudo
                             Discord</label>
                         <div class="sc-ciZhAO jHsMub"><input class="error" id="psdiscord" type="text"></div>
                     </div>
@@ -70,7 +72,8 @@
                             disponibilités ?</label>
                         <div class="sc-ciZhAO jHsMub"><textarea class="l error" id="disp" required=""></textarea>
                         </div>
-                    </div><button type="submit" value="push">Envoyer</button>
+                    </div> -->
+                    <button type="submit" value="push">Envoyer</button>
                 </form>
             </div>
         </div>
