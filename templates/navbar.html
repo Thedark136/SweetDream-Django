@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="SweetDream - Faction Paladium">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Sweet-Dream</title>
+    <script defer="defer" src="/static/js/main.ace29864.js"></script>
+    <link href="/static/css/main.e072c9dc.css" rel="stylesheet">
+    <style data-styled="active" data-styled-version="5.3.5"></style>
+</head>
+
+<body>
+    <nav class="sc-gKXOVf faIBka">
+        <a href="/"><img src="/static/media/logo.a92747e0e0b3cdd3ef16.png" alt="SweetDream logo"
+                class="sc-iBkjds fPzLjK"></a>
+        <div color="#fff" class="sc-iqcoie ZyMMP"><span></span></div>
+        <div class="sc-kDDrLX uwrCa">
+            <ul class="sc-ftvSup gHSAed">
+                <li class="sc-papXJ fWJrFG"><a href="{% url 'home' %}">Accueil</a></li>
+                <li class="sc-papXJ fWJrFG"><a href="{% url 'ally' %}">Ally &amp; Truces</a></li>
+                <li class="sc-papXJ fWJrFG"><a href="{% url 'RC' %}">Recrutement</a></li>
+                <li class="sc-papXJ fWJrFG"><a href="/shop">Boutique</a></li>
+            </ul>
+            {% block contenu %} {% endblock %}
+        </div>
+    </nav>
+</body>
+</html>
