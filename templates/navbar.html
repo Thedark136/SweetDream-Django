@@ -1,4 +1,4 @@
-{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,8 +8,13 @@
     <meta name="description" content="SweetDream - Faction Paladium">
     <link rel="apple-touch-icon" href="/logo192.png">
     <title>Sweet-Dream</title>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" >
-    <style data-styled="active" data-styled-version="5.3.5"></style>
+    <!-- <link href="/templates/main.css" rel="stylesheet">
+    <style data-styled="active" data-styled-version="5.3.5"></style> -->
+    {% load static %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
 <body>
