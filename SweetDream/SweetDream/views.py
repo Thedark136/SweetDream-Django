@@ -14,6 +14,7 @@ def recrutements_view(request):
         form = RCForm()
         if form.is_valid():
             form.save()
+            print(form)
             return HttpResponseRedirect("/")
     else:
         form = RCForm
